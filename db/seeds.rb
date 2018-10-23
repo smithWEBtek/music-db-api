@@ -27,7 +27,6 @@ Category.create(name: 'Pop90s')
 Category.create(name: 'Pop00s')
 Category.create(name: 'Pop10s')
 
-Song.create(title: 'Book')
 Song.create(title: 'Blue Skies')
 Song.create(title: 'Llororas')
 Song.create(title: 'El Cantante')
@@ -47,11 +46,10 @@ SongCategory.create(song_id: 6, category_id: 6)
 SongCategory.create(song_id: 7, category_id: 6)
 SongCategory.create(song_id: 8, category_id: 6)
 
-
-Resource.create(song_id: 1, name: 'RealBook1.pdf', format: 'pdf', description: 'Real Book 1 pdf', location: 'resources/books folder')
-Resource.create(song_id: 1, name: 'RealBook2.pdf', format: 'pdf', description: 'Real Book 2 pdf', location: 'resources/books folder')
-Resource.create(song_id: 1, name: 'RealBook3.pdf', format: 'pdf', description: 'Real Book 3 pdf', location: 'resources/books folder')
-Resource.create(song_id: 1, name: 'RealBook6.pdf', format: 'pdf', description: 'Real Book 6 pdf', location: 'resources/books folder')
+Resource.create(name: 'RealBook1.pdf', format: 'pdf-book', description: 'Real Book 1 pdf', location: 'resources/books folder')
+Resource.create(name: 'RealBook2.pdf', format: 'pdf-book', description: 'Real Book 2 pdf', location: 'resources/books folder')
+Resource.create(name: 'RealBook3.pdf', format: 'pdf-book', description: 'Real Book 3 pdf', location: 'resources/books folder')
+Resource.create(name: 'RealBook6.pdf', format: 'pdf-book', description: 'Real Book 6 pdf', location: 'resources/books folder')
 
 Resource.create(song_id: 2, name: 'blue-skies.sib', format: 'sib', description: 'sib file', location: 'resources folder')
 Resource.create(song_id: 2, name: 'blue-skies.mp3', format: 'mp3', description: 'mp3 audio file', location: 'resources folder')

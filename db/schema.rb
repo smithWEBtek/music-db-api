@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 6) do
   end
 
   create_table "resources", force: :cascade do |t|
-    t.integer "song_id", default: 1
+    t.integer "song_id"
     t.string "name"
     t.string "description"
     t.string "format"

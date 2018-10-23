@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 	get 'api/songs/:id/resources', to: 'api/songs#resources'
 	get 'api/songs/:id/collections', to: 'api/songs#collections'
 
+	get 'api/books', to: 'api/resources#books'
+
 	namespace :api do 
 	  resources :categories
 		resources :songs
