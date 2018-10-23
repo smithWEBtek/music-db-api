@@ -1,5 +1,5 @@
 class Api::SongsController < ApplicationController
-	before_action :set_song, only: [:show, :update, :destroy, :resources, :collections]
+	before_action :set_song, only: [:show, :update, :destroy, :resources]
 	
 	def index
 		@songs = Song.all.sort { |a,b| a.title <=> b.title }
@@ -42,14 +42,14 @@ class Api::SongsController < ApplicationController
 		end
 	end
 	
-	def collections
-		@collections = @song.collections
-		if @collections
-			render json: @collections
-		else
-			render json: { errors: { message: 'song collections NOT found' }}
-		end
-	end
+	# def collections
+	# 	@collections = @song.collections
+	# 	if @collections
+	# 		render json: @collections
+	# 	else
+	# 		render json: { errors: { message: 'song collections NOT found' }}
+	# 	end
+	# end
 
 	private
 	def set_song
